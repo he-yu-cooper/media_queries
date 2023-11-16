@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Afficher/masquer les liens pour les résolutions inférieures ou égales à 767px */
+@media screen and (max-width: 767px) {
+    nav ul {
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: block;
+    }
+}
